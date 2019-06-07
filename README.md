@@ -6,6 +6,7 @@
 
 [https://github.com/KevinJump/uSync8/issues/14#issuecomment-487598751](https://github.com/KevinJump/uSync8/issues/14#issuecomment-487598751)
 
+## example usync backup DocumentType
 
 ```diff
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,4 +49,19 @@
     </Tabs>
 --</DocumentType>
 ++</ContentType>
+```
+
+## custom grid components
+
+[https://our.umbraco.com/apidocs/v8/ui/#/api/umbraco.services.editorService](https://our.umbraco.com/apidocs/v8/ui/#/api/umbraco.services.editorService)
+
+dialogService -> editorService
+
+### usage umbraco property editors
+
+<ng-form name="form"> is required
+
+```diff
+--<umb-editor model="RTEcontent"></umb-editor>
+++<umb-property-editor model="RTEcontent"></umb-property-editor>
 ```
