@@ -65,3 +65,38 @@ dialogService -> editorService
 --<umb-editor model="RTEcontent"></umb-editor>
 ++<umb-property-editor model="RTEcontent"></umb-property-editor>
 ```
+
+## views
+
+```diff
+--@Model.Content.Text
+++@Model.Text
+```
+
+```diff
+--var isImage = stage.StageImage.DocumentTypeAlias == "Image";
+++var isImage = stage.StageImage.IsDocumentType("Image");
+```
+
+```diff
+--@Umbraco.If(singleColumn, "</div>")
+++@Html.If(singleColumn, "</div>")
+```
+
+```diff
+--var urlProvider = UmbracoContext.Current.UrlProvider;
+++var urlProvider = Umbraco.Web.Composing.Current.UmbracoContext.UrlProvider;
+```
+
+### related links
+
+The related links on Umbraco 8 changed to Multi Url Picker
+
+[https://our.umbraco.com/forum/umbraco-8/96405-related-links-umbraco-8#comment-304799](https://our.umbraco.com/forum/umbraco-8/96405-related-links-umbraco-8#comment-304799)
+
+## models
+
+```diff
+--public class EmailOptInPage : RenderModel
+++public class EmailOptInPage : ContentModel
+```
