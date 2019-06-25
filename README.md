@@ -6,6 +6,10 @@
 
 [https://github.com/KevinJump/uSync8/issues/14#issuecomment-487598751](https://github.com/KevinJump/uSync8/issues/14#issuecomment-487598751)
 
+## courier
+
+[https://our.umbraco.com/forum/umbraco-courier/95738-umbraco-8-courier](https://our.umbraco.com/forum/umbraco-courier/95738-umbraco-8-courier)
+
 ## example usync backup DocumentType
 
 ```diff
